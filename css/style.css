@@ -70,9 +70,11 @@ grid-row: span 1;
     min-width: 150px;
     height: 100%;
     background-image: url(../img/kulturradet.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    background-color: blue;
 
 }
 
@@ -210,6 +212,11 @@ h6 {
 .scene {
     height: 100vh;
     width: 100vw;
+    background-image: url(../img/illu_test1_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-position: center;
 }
 
 

@@ -19,10 +19,6 @@ function getValues() {
     addText("input.cat", "span.name2");
     addText("input.hare", "span.name4");
 
-    // replace text numbers
-    addText("input.n1", "span.number1");
-    addText("input.n2", "span.number2");
-
     // replace text b-adjektiv
     addText("input.b_ad1", "span.bad1");
     addText("input.b_ad2", "span.bad2");
