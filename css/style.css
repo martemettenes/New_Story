@@ -1,0 +1,401 @@
+/* 
+font-family: 'Kumar One Outline', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Cherry Swash', cursive;
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+body {
+    margin: 0 auto;
+    color: black;
+    font-size: 12pt;
+    overflow: hidden;
+    min-width: 320px;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gridcontainer{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25vh;
+    grid-auto-rows: 25vh;
+}
+
+.griditem{
+    border: 1px solid black;
+}
+
+.griditem:nth-child(10){
+grid-column: span 3;
+grid-row: span 1;
+}
+
+
+
+#menu {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+}
+
+.logo,
+.space {
+    padding: 1%;
+}
+
+
+.logo {
+    width: 15vw;
+    min-width: 150px;
+    height: 100%;
+    background-image: url(../img/kulturradet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.space {
+    width: 70vw;
+}
+
+.restart {
+    cursor: pointer;
+}
+
+
+
+.box {
+    width: 100%;
+    padding: 10%;
+    padding-top: 2%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+span {
+    color: #d90000;
+    /*    text-transform: lowercase;*/
+    text-transform: lowercase;
+}
+
+.names {
+    text-transform: capitalize;
+}
+
+
+/* FORM */
+
+input {
+    margin: 0 auto;
+    display: block;
+    width: 30vw;
+    min-width: 180px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 12pt;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* FF 19+ */
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/* IE 10+ */
+
+#submit {
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+    width: 20vw;
+    min-width: 120px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* TYPOGRAPHY*/
+
+h1 {
+    font-family: 'Kumar One Outline', cursive;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+    overflow: hidden;
+}
+
+h3 {
+    margin-top: 10vh;
+    margin-bottom: 1vh;
+}
+
+h4 {
+    font-size: 15pt;
+}
+
+h5 {
+    margin-top: 1vh;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Dosis, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+
+
+
+
+/* ------------------------
+-
+-
+-        THE MAIN STORY
+-
+-
+---------------------------*/
+
+
+
+
+
+/* SCENES */
+
+.scene {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.img-box-left {
+    width: 50%;
+    padding: 5%;
+}
+
+.img-box-right {
+    width: 50%;
+    padding: 5%;
+}
+
+.house-div {
+    background-image: url(../img/halfhouse2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.angry_wolf {
+    left: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.space-div {
+    width: 100%;
+    height: 35%;
+}
+
+.text-box {
+    padding: 2%;
+    color: black;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+button {
+    font-size: 12pt;
+    width: 10vw;
+    min-width: 120px;
+    padding: 8px;
+    border: 2px solid black;
+}
+
+.img-box {
+    height: 40vh;
+}
+
+.space-box {
+    height: 5vh;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+
+html {
+    overflow: -moz-scrollbars-none;
+}
+
+html {
+    -ms-overflow-style: none;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+
+
+
+
+/*
+
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+
+    .left {
+        width: 100%;
+        height: 35%;
+        min-height: 100px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .right {
+        width: 100%;
+        height: 65%;
+    }
+
+    .scene {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .text-box {
+        font-size: 18px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    .img-box-left,
+    .img-box-right {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+    .left {
+        padding-top: 3%;
+        height: auto;
+    }
+
+    .right {
+        height: auto;
+    }
+
+    .text-box {
+        font-size: 14px;
+        overflow: hidden;
+    }
+
+    .scene {
+        overflow: auto;
+    }
+
+    button {
+        min-width: 100px;
+        font-size: 12px;
+    }
+
+
+
+
+}
+
+
+/*
+
+
+
+
+
+/* ANIMATIONS */
+
+/*
+.appear {
+    transform: translate(-20%, 2px) scale(.5);
+    transition: transform .8s ease, opacity .2s ease;
+    opacity: 0;
+    -webkit-transform: rotateZ(-5deg);
+    -ms-transform: rotateZ(-5deg);
+    transform: rotateZ(-5deg);
+    transform-origin: bottom center;
+}*/
+
+/*
+.appear.visible {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    transform-origin: bottom center;
+}*/
+
+/*------------ */

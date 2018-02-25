@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reve-enka</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Fredericka+the+Great|Kumar+One+Outline" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- THIS IS WHERE YOU FILL IN THE FORM -->
+
+        <div id="form_box" class="box">
+            <div>
+                <h1> LAG ET EVENTYR </h1>
+            </div>
+            <form id="names_form" autocomplete="off">
+                <h4> Du trenger ikke å fylle ut alle feltene.</h4>
+
+
+                <!-- NAVN -->
+
+                <h3> Skriv noen navn</h3>
+                <!-- name 1 -->
+                <input type="text" class="widow" placeholder="Navn" required>
+
+                <!-- name 2 -->
+                <input type="text" class="wolf" placeholder="Navn" required>
+
+                <!-- name 3 -->
+                <input type="text" class="cat" placeholder="Navn" required>
+
+                <!-- name 4 -->
+                <input type="text" class="hare" placeholder="Navn" required>
+
+
+                <!-- TALL -->
+
+                <h3> Skriv noen tall</h3>
+                <!-- name 1 -->
+                <input type="text" class="n1" placeholder="Tall" required>
+
+                <!-- name 2 -->
+                <input type="text" class="n2" placeholder="Tall" required>
+
+
+                <!-- ADJEKTIV -->
+
+                <h3> Skriv noen adjektiv som slutter på -e eller -ete</h3>
+                <h5> Som f.eks tullete, dumme, feige, vimsete osv.</h5>
+
+                <!-- Spesielle adjektiv 1 -->
+                <input type="text" class="b_ad1" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 2 -->
+                <input type="text" class="b_ad2" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="b_ad3" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="b_ad4" placeholder="Adjektiv" required>
+
+
+
+                <h3> Skriv noen adjektiv</h3>
+                <h5> Som f.eks blå, snill, rar osv.</h5>
+
+                <!-- Vanlige adjektiv 1 -->
+                <input type="text" class="ad_1" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 2 -->
+                <input type="text" class="ad_2" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="ad_3" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="ad_4" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 1 -->
+                <input type="text" class="ad_5" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 2 -->
+                <input type="text" class="ad_6" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="ad_7" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="ad_8" placeholder="Adjektiv" required>
+
+
+
+                <!--- SEND INN KNAPP -->
+                <input id="submit" class="btn" type="button" class="clickable" value="Lag eventyr!">
+
+
+            </form>
+        </div>
+
+
+
+
+        <!--- STORY IN HTML ---->
+
+
+        <div id="scene1" class="scene gridcontainer hidden">
+
+                <div class="griditem">1</div>
+                <div class="griditem">2</div>
+                <div class="griditem">3</div>
+                <div class="griditem">4</div>
+                <div class="griditem">5</div>
+                <div class="griditem">6</div>
+                <div class="griditem">7</div>
+                <div class="griditem">8</div>
+                <div class="griditem">9</div>
+
+                <div class="text-box griditem">
+                    <p>
+                        Det var en gang en vakker reve-enke som het <span class="name1 names"> Venke </span> som bodde langt inne i skogen med hushjelpen, katten <span class="name2 names"> Korse</span>. En tid etter mannen hennes døde tok det til å komme <span class="number1"> mange </span> friere til enka.
+                    </p>
+                    <button class="restart">Start på nytt</button>
+                    <button id="nextButton1" class="btn"> Neste </button>
+                    
+                </div>
+
+        </div>
+
+        <div id="scene2" class="scene gridcontainer hidden">
+
+                <div class="griditem">1</div>
+                <div class="griditem">2</div>
+                <div class="griditem">3</div>
+                <div class="griditem">4</div>
+                <div class="griditem">5</div>
+                <div class="griditem">6</div>
+                <div class="griditem">7</div>
+                <div class="griditem">8</div>
+                <div class="griditem">9</div>
+
+                <div class="text-box griditem">
+                    <p>
+                        Den første som prøvde seg var den <span class="bad1"> grå </span> Ulven <span class="name3 names"> Bjarne </span>. På veien møtte ulven en gammel og <span class="ad1"> grå </span> kjerring som hadde fått det lange nesegrevet sitt fast i en <span class="ad2"> stor </span> trestubbe. I over <span class="number2"> hundre</span> år hadde hun stått der, og ba ulven om hjelp. Men <span class="name3 names"> Bjarne </span> var likeglad og hadde annet å gjøre. Ulven skulle til Reve-enka og fri.
+                    </p>
+                    <button class="restart">Start på nytt</button>
+                    <button id="nextButton2" class="btn"> Neste </button>
+                    
+                </div>
+
+        </div>
+
+        <div id="scene3" class="scene gridcontainer hidden">
+
+                <div class="griditem">1</div>
+                <div class="griditem">2</div>
+                <div class="griditem">3</div>
+                <div class="griditem">4</div>
+                <div class="griditem">5</div>
+                <div class="griditem">6</div>
+                <div class="griditem">7</div>
+                <div class="griditem">8</div>
+                <div class="griditem">9</div>
+    
+                <div class="text-box griditem">
+                    <p>
+                        Et stykke borte møtte <span class="name3 names"> Bjarne</span> en <span class="ad3"> liten </span> harepus som het <span class="name4 names"> Per </span> som var så glad og <span class="ad4"> fornøyd </span> fordi han hadde fått en <span class="ad5"> fornøyd </span> kone og et fint hus. Men ulven hørte ikke på ham, han satte etter haren og ville ete ham.
+                    </p>
+                    <button class="restart">Start på nytt</button>
+                    <button id="nextButton2" class="btn"> Neste </button>
+                    
+                </div>
+    
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+        <div id="scene2" class="scene flex hidden">
+            <div class="left">
+                <div class="text-box">
+
+                    <button id="nextButton2" class="btn"> Neste </button>
+                </div>
+            </div>
+            <div class="right flex">
+                <div class="img-box-left">
+                    <img class="angry_wolf" src="img/angrywolf.gif">
+                </div>
+                <div class="img-box-right">
+                    <img class="hare" src="img/happyhare_30.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="scene3" class="scene flex hidden">
+            <div class="left">
+                <div class="text-box">
+                    <p>
+                        Rett foran reve-huset snublet haren og ba for livet. <span class="name3 names"> Bjarne </span> gjorde seg blid og lot som han hjalp den <span class="bad2"> lille </span> haren opp igjen, han trodde kanskje Reve-enka hadde sett ham og derfor ville han gjøre et godt inntrykk.
+                    </p>
+                    <button id="nextButton3" class="btn"> Start på nytt </button>
+                </div>
+            </div>
+            <div class="right flexwrap">
+                <div class="img-box-left">
+                    <img class="angry_wolf" src="img/angrywolf.gif">
+                </div>
+                <div class="img-box-right house-div">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!------------- STORY ----------------->
+
+
+
+
+        <!--
+
+        <div id="story" class="box hidden">
+
+
+            <h1> Reve-Enka </h1>
+            <p>
+                Det var en gang en vakker reve-enke som het <span class="name1"> Venke </span> som bodde langt inne i skogen med hushjelpen, katten <span class="name2"> Korse</span>. En tid etter mannen hennes døde tok det til å komme <span class="number1"> mange </span> friere til enka.
+            </p>
+
+            <p>
+                Den første som prøvde seg var den <span class="bad1"> grå </span> Ulven <span class="name3"> Bjarne </span>. På veien møtte ulven en gammel og <span class="ad1"> grå </span> kjerring som hadde fått det lange nesegrevet sitt fast i en <span class="ad2"> stor </span> trestubbe. I over <span class="number2"> hundre</span> år hadde hun stått der, og ba ulven om hjelp. Men <span class="name3"> Bjarne </span> var likeglad og hadde annet å gjøre. Ulven skulle til Reve-enka og fri.
+            </p>
+
+            <p>
+                Et stykke borte møtte <span class="name3"> Bjarne</span> en <span class="ad3"> liten </span> harepus som het <span class="name4"> Per </span> som var så glad og <span class="ad4"> fornøyd </span> fordi han hadde fått en <span class="ad5"> fornøyd </span> kone og et fint hus. Men ulven hørte ikke på ham, han satte etter haren og ville ete ham.
+            </p>
+
+            <p>
+                Rett foran reve-huset snublet haren og ba for livet. <span class="name3"> Bjarne </span> gjorde seg blid og lot som han hjalp den <span class="bad2"> lille </span> haren opp igjen, han trodde kanskje Reve-enka hadde sett ham og derfor ville han gjøre et godt inntrykk.
+            </p>
+            <p>
+                Han banket på den <span class="bad3"> blå </span> døren og <span class="name2"> Korse</span> åpnet. "Godkveld" hilste ulven. "Godkveld igjen" sa <span class="name2"> Korse</span>. "Er reve-enka hjemme i kveld?" spurte han. "Hun sitter inne" svarte jenta. "Hva tar hun seg til denne <span class="bad4"> dumme </span> kvelden, låter hun ille eller vel?" spurte <span class="name3"> Ulven </span>. "Hun sørger over husbonds død og gråter nesa sår og rød - hun vet ikke sin arme råd hun" sa <span class="name2"> Korse</span>. "Be henne ut å gå skal hun få et godt råd!" sa Ulven. Da katten kom inn, spurte Reveenka: "Hvem er det som tasser og banker på, så jeg ikke må kveldsro få?" "Det er frierne dine." svarte <span class="name2"> Korse</span>; "jeg skulle be deg ut å gå, så skulle du få et godt råd."
+                <br> "Hvilken farge har kufta?" spurte revefruen. "Ven vakker grå; lang kropp og lite på." svarte <span class="name2"> Korse</span>. "La'n gå, la'n gå, jeg trenger ikke hans råd!" sa enka; og da <span class="name3"> Bjarne </span> fikk det budet, måtte han gjøre vendereis.
+            </p>
+        </div>
+-->
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
