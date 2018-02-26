@@ -6,9 +6,9 @@ submitBtn.addEventListener('mousedown', showScenes1);
 
 // Click logo or "restart" to restart 
 
-var restart = document.querySelector('.restart');
+var restart = document.querySelectorAll('.restart');
 restart.addEventListener('mousedown', showForm);
-/* document.querySelector('.logo').addEventListener('mousedown', showForm); */
+
 
 
 function getValues() {
@@ -83,7 +83,6 @@ function showForm() {
 
 function showScenes1() {
     scene1.classList.remove('hidden');
-    scene1.classList.add('visible');
 
     scene2.classList.add('hidden');
     scene3.classList.add('hidden');
@@ -93,7 +92,6 @@ function showScenes1() {
 
 
 function showScenes2() {
-    console.log('showing scene 2');
     scene2.classList.remove('hidden');
 
     scene1.classList.add('hidden');
