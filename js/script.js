@@ -7,8 +7,10 @@ submitBtn.addEventListener('mousedown', showScenes1);
 // Click logo or "restart" to restart 
 
 var restart = document.querySelectorAll('.restart');
-restart.addEventListener('mousedown', showForm);
 
+for (var i = 0; i < restart.length; i++ ){
+    restart[i].addEventListener('mousedown', showForm);
+}
 
 
 function getValues() {
