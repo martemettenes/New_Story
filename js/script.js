@@ -60,6 +60,7 @@ function addText(inputCssSelector, outputCssSelector) {
 var scene1 = document.getElementById("scene1");
 var scene2 = document.getElementById("scene2");
 var scene3 = document.getElementById("scene3");
+var scene4 = document.getElementById("scene4");
 
 
 var nextBtn1 = document.getElementById("nextButton1");
@@ -69,7 +70,7 @@ var nextBtn2 = document.getElementById("nextButton2");
 nextBtn2.addEventListener("mousedown", showScenes3);
 
 var nextBtn3 = document.getElementById("nextButton3");
-nextBtn3.addEventListener("mousedown", showForm);
+nextBtn3.addEventListener("mousedown", showScenes4);
 
 function showForm() {
     document.querySelector("#form_box").classList.remove("hidden");
@@ -111,45 +112,18 @@ function showScenes3() {
     document.querySelector("#form_box").classList.add("hidden");
 }
 
+function showScenes4() {
+    scene4.classList.remove('hidden');
+
+    scene1.classList.add('hidden');
+    scene2.classList.add('hidden');
+    scene3.classList.add('hidden');
+
+    console.log('showing scene 4');
+    document.querySelector("#form_box").classList.add("hidden");
+    console.log('hiding form');
+}
 
 
+// RELLAX
 
-
-
-
-
-//(function () {
-//    let activeObjects = document.querySelectorAll('.appear');
-//    console.log(activeObjects);
-//
-//    document.querySelector('.main').addEventListener('scroll', setClasses);
-//
-//    function setClasses() {
-//
-//        for (let element of activeObjects) {
-//            console.log('Hello');
-//            let elementBoundingRect = element.getBoundingClientRect();
-//            // check if the box is on screen
-//            let offset = 100;
-//            if ((elementBoundingRect.top < (window.innerHeight - offset)) && (elementBoundingRect.bottom > offset)) {
-//                if (!element.classList.contains('visible')) element.classList.add('visible');
-//            } else {
-//                if (element.classList.contains('visible')) {
-//                    if (!element.hasAttribute('data-stick')) element.classList.remove('visible');
-//                }
-//            }
-//        }
-//    };
-//    setClasses();
-//
-//}());
-//
-
-
-
-
-
-
-
-
-/* ------------ */
