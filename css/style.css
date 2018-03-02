@@ -39,7 +39,27 @@ body {
     align-self: center;
     height: 20%;
     padding: 5%;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+
 }
+
+p {
+    color: #dddcdc;
+}
+
+
+/* Animation */
+
+
+@keyframes fadeIn {
+    from {color: #d90000;}
+    to {color: black;}
+}
+
+
+
 
 .gridcontainer{
     width: 100%;
@@ -51,7 +71,7 @@ body {
 }
 
 .griditem{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
     overflow: hidden;
 }
@@ -92,6 +112,17 @@ body {
     grid-row: span 2;
     }
 
+.griditem:nth-child(21){
+    grid-column: span 2;
+    grid-row: span 2;
+    }
+    
+.griditem:nth-child(31){
+    grid-column: span 2;
+    grid-row: span 2;
+    }
+        
+
 
 .illustration {
     width: 100%;
@@ -128,6 +159,10 @@ body {
 
 .restart {
     cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    background-color: #dddcdc;
 }
 
 
