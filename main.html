@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reve-enka</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Fredericka+the+Great|Kumar+One+Outline" rel="stylesheet">
+
+    <script src="lib/p5.play.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- THIS IS WHERE YOU FILL IN THE FORM -->
+
+        <div id="form_box" class="box hidden">
+            <div>
+                <h1> LAG ET EVENTYR </h1>
+            </div>
+
+
+             <!-- NAVN -->
+            <form id="yourname_form" class="" autocomplete="off">
+                <h3> Hva heter du?</h3>
+                <input type="text" class="widow" placeholder="Navn" required>
+
+                <input id="submit" class="yourname_btn" type="button" class="clickable" value="Neste">
+            </form>
+
+                <!-- name 1 -->
+            <form id="friends_form" class="hidden" autocomplete="off">
+                <h3> Hva heter vennene dine? </h3>
+                <!-- name 2 -->
+                <input type="text" class="wolf" placeholder="Navn" required>
+
+                <!-- name 3 -->
+                <input type="text" class="cat" placeholder="Navn" required>
+
+                <!-- name 4 -->
+                <input type="text" class="hare" placeholder="Navn" required>
+
+                <input id="submit" class="friends_btn" type="button" class="clickable" value="Neste">
+            </form>
+
+                <!-- ADJEKTIV -->
+
+            <form id="adje_form" class="hidden" autocomplete="off">
+                <h3> Skriv noen adjektiv som slutter på -e eller -ete</h3>
+                <h5> Som f.eks tullete, dumme, feige, vimsete osv.</h5>
+                <h4> Du trenger ikke å fylle ut alle feltene.</h4>
+
+                <!-- Spesielle adjektiv 1 -->
+                <input type="text" class="b_ad1" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 2 -->
+                <input type="text" class="b_ad2" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="b_ad3" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="b_ad4" placeholder="Adjektiv" required>
+
+                <input id="submit" class="adje_btn" type="button" class="clickable" value="Neste">
+            </form>
+
+
+            <form id="adj_form" class="hidden" autocomplete="off">
+                <h3> Skriv noen adjektiv</h3>
+                <h5> Som f.eks blå, snill, rar osv.</h5>
+                <h4> Du trenger ikke å fylle ut alle feltene.</h4>
+
+                <!-- Vanlige adjektiv 1 -->
+                <input type="text" class="ad_1" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 2 -->
+                <input type="text" class="ad_2" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="ad_3" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="ad_4" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 1 -->
+                <input type="text" class="ad_5" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 2 -->
+                <input type="text" class="ad_6" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="ad_7" placeholder="Adjektiv" required>
+
+                <!-- Vanlige adjektiv 3 -->
+                <input type="text" class="ad_8" placeholder="Adjektiv" required>
+
+                <input id="submit" class="adj_btn" type="button" class="clickable" value="Lag eventyr!">
+
+
+            </form>
+
+
+        </div>
+
+
+
+
+        <!--- STORY IN HTML ---->
+
+
+        <div id="story" class="scene gridcontainer">
+
+                <div class="griditem">
+                    <p class="justify">
+                        Det var en gang en vakker reve-enke som het <span class="name1 names"> Venke </span> som bodde langt inne i skogen med hushjelpen, katten <span class="name2 names"> Korse</span>.
+                    </p>
+                </div>
+                <div class="griditem">
+                        <p class="justify">
+                         En tid etter mannen hennes døde tok det til å komme mange friere til enka.
+                        </p>
+                </div>
+                <div class="griditem">
+                        <button class="restart">Start på nytt</button>
+                </div>
+                <div class="griditem">4</div>
+                <div class="griditem">
+                    <img class="illustration"
+                    src="img/img3/illu_trees3_tre.png">
+                </div>
+                <div class="griditem">6</div>
+                <div class="griditem">7</div>
+                <div class="griditem">8</div>
+                <div class="griditem">
+                        <img class="illustration" src="img/img3/illu_wolf+hag_image.png">
+                </div>
+                <div class="griditem">
+
+                </div>
+                <div class="griditem">11</div>
+                <div class="griditem">12
+                </div>
+                <div class="griditem">
+                        <img class="illustration" src="img/img3/illu_trees1_tre.png">
+                </div>
+                <div class="griditem">14</div>
+                <div class="griditem">15</div>
+                <div class="griditem">
+                        <img class="illustration" src="img/img3/illu_trees2_tre.png">
+                </div>
+                <div class="griditem">17</div>
+                <div class="griditem">18</div>
+                <div class="griditem">19</div>
+                <div class="griditem">20</div>
+                <div class="griditem">21</div>
+                <div class="griditem">22</div>
+                <div class="griditem">23</div>
+                <div class="griditem">24</div>
+                <div class="griditem">25</div>
+                <div class="griditem">26</div>
+                <div class="griditem">27</div>
+                <div class="griditem">28</div>
+                <div class="griditem">29</div>
+                <div class="griditem">30</div>
+                <div class="griditem">31</div>
+                <div class="griditem">32</div>
+                <div class="griditem">33</div>
+                <div class="griditem">34</div>
+                <div class="griditem">35</div>
+                <div class="griditem">36</div>
+                <div class="griditem">37</div>
+                <div class="griditem">38</div>
+                <div class="griditem">39</div>
+                <div class="griditem">40</div>
+
+        </div>
+
+  
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

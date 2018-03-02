@@ -1,7 +1,14 @@
+
+
+
+
+
+
 // Get submit button
-var submitBtn = document.getElementById("submit");
-submitBtn.addEventListener('mousedown', getValues);
-submitBtn.addEventListener('mousedown', showScenes1);
+
+// var submitBtn = document.getElementById("submit");
+// submitBtn.addEventListener('mousedown', getValues);
+// submitBtn.addEventListener('mousedown', showScenes1);
 
 
 // Click logo or "restart" to restart 
@@ -53,9 +60,8 @@ function addText(inputCssSelector, outputCssSelector) {
 }
 
 
+/* 
 
-
-/* ANIMATION */
 
 var scene1 = document.getElementById("scene1");
 var scene2 = document.getElementById("scene2");
@@ -72,16 +78,17 @@ nextBtn2.addEventListener("mousedown", showScenes3);
 var nextBtn3 = document.getElementById("nextButton3");
 nextBtn3.addEventListener("mousedown", showScenes4);
 
+*/
+
 function showForm() {
     document.querySelector("#form_box").classList.remove("hidden");
-
-    scene1.classList.add('hidden');
-    scene2.classList.add('hidden');
-    scene3.classList.add('hidden');
 
     document.querySelector("#form_box").scrollTop = 0;
     console.log('scroll back to top!');
 }
+
+
+/*
 
 
 function showScenes1() {
@@ -124,6 +131,4 @@ function showScenes4() {
     console.log('hiding form');
 }
 
-
-// RELLAX
-
+*/
