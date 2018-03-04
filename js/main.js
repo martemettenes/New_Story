@@ -1,3 +1,8 @@
+	
+var winheight = window.innerHeigh
+var scrollTop = window.pageYOffset;
+console.log(scrollTop);
+
 
 var forms = document.querySelectorAll('form');
 var nextBtn = document.querySelectorAll('#submit')
